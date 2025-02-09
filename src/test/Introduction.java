@@ -1,14 +1,11 @@
 package test;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Introduction {
 
 	public static void main(String[] args) {
-		System.out.println("Selenium setup");
+		System.out.println("Selenium setup!!");
 		// TODO Auto-generated method stub
 //		System.out.print(2);
 		ChromeDriver cd = new ChromeDriver();
