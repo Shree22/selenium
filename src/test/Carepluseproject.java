@@ -9,11 +9,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class Locators {
+public class Carepluseproject {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		ChromeDriver cd= new ChromeDriver();
+		
 		cd.get("https://care-pulse-nine-mu.vercel.app/");
 		
 		cd.manage().window().maximize();
@@ -46,32 +47,29 @@ public class Locators {
 		cd.findElement(By.id(":rc:-form-item")).sendKeys("7765434567");
 		
 		cd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		cd.findElement(By.xpath("//button [@id=':rd:-form-item']")).click();
 		
-		WebElement ddown= cd.findElement(By.id(":R9abttttb:-form-item"));
-		Select sc= new Select(ddown);
-		sc.selectByValue("Jane Powell");
-		sc.selectByIndex(5);
-		System.out.println (((WebElement) sc.getAllSelectedOptions()).getText());
+//		WebElement drop =cd.findElement(By.cssSelector(".aria-hidden"));
+//		Select docdd = new Select(drop);
+//		
+//		docdd.selectByIndex(0);
+//		
+//		Thread.sleep(3000);
+//		
+//		docdd.selectByValue("John Green");
+//		
+//		Thread.sleep(3000);
+//		
+//		docdd.selectByVisibleText("John Green");
+//		
+//		
 		
-		
-		
-		
-		
-	 
-		
-		
-		
-		
-		
-		
-				
-		
-		
-		
-		
-		
-		
-		
+//		Select sc= new Select();
+//		sc.selectByValue("Jane Powell");
+//		sc.selectByIndex(5);
+//		System.out.println (((WebElement) sc.getAllSelectedOptions()).getText());
+//		
+	
 		
 		
 		
